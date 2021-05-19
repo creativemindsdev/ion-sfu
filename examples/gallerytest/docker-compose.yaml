@@ -8,7 +8,7 @@ services:
       - 8000:80
 
   sfu:
-    image: pionwebrtc/ion-sfu:latest-jsonrpc
+    image: 949696328322.dkr.ecr.eu-central-1.amazonaws.com/ion-server:latest
     ports:
       - "5000-5200:5000-5200/udp"
       - 7000:7000

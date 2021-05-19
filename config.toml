@@ -2,7 +2,7 @@
 # Ballast size in MiB, will allocate memory to reduce the GC trigger upto 2x the
 # size of ballast. Be aware that the ballast should be less than the half of memory
 # available.
-ballast = 0
+ballast = 30
 # enable prometheus sfu statistics
 withstats = false
 
@@ -67,16 +67,8 @@ mdns = true
 # Multiple public IP addresses can be specified as a comma separated list
 # if the sfu is deployed in a DMZ between two 1-1 NAT for internal and
 # external users.
-# nat1to1 = ["1.2.3.4"]
+nat1to1 = ["3.126.82.37"]
 # icelite = true
-
-[webrtc.timeouts]
-# The duration in [sec] without network activity before a ICE Agent is considered disconnected
-disconnected = 5
-# The duration in [sec] without network activity before a ICE Agent is considered failed after disconnected
-failed = 25
-# How often in [sec] the ICE Agent sends extra traffic if there is no activity, if media is flowing no traffic will be sent
-keepalive = 2
 
 [turn]
 # Enables embeded turn server
