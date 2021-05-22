@@ -2,10 +2,10 @@ name: build json-rpc
 on:
   push:
     branches:
-    - update
+    - updates
   pull_request:
     branches:
-    - update
+    - updates
 jobs:
   build:
     name: build json-rpc
